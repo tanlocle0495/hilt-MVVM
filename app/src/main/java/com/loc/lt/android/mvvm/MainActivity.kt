@@ -1,9 +1,11 @@
 package com.loc.lt.android.mvvm
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.loc.lt.android.mvvm.ui.base.BaseActivity
+import dagger.hilt.android.AndroidEntryPoint
 
-class MainActivity : AppCompatActivity() {
+@AndroidEntryPoint
+class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
