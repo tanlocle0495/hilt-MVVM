@@ -1,4 +1,4 @@
-package com.loc.lt.android.mvvm.ui.demo
+package com.loc.lt.android.mvvm.ui.demo.viewmodel
 
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
@@ -10,8 +10,7 @@ import com.loc.lt.android.mvvm.utils.NetworkHelper
 import com.loc.lt.android.mvvm.utils.Resource
 import kotlinx.coroutines.launch
 
-
-class DemoViewModel @ViewModelInject constructor(
+class ExampleViewModel @ViewModelInject constructor(
     private val repository: DemoRepositoryImp,
     private val networkHelper: NetworkHelper
 ) : BaseViewModel() {
@@ -35,6 +34,5 @@ class DemoViewModel @ViewModelInject constructor(
             } else _users.postValue(Resource.error("No internet connection", null))
         }
     }
-
 
 }
