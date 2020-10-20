@@ -1,4 +1,4 @@
-package com.loc.lt.android.mvvm.ui.demo.viewmodel
+package com.loc.lt.android.mvvm.ui.example.viewmodel
 
 import com.loc.lt.android.mvvm.data.remote.ApiService
 import com.loc.lt.android.mvvm.model.User

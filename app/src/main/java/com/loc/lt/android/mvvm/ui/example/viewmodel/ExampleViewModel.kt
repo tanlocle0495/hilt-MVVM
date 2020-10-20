@@ -1,4 +1,4 @@
-package com.loc.lt.android.mvvm.ui.demo.viewmodel
+package com.loc.lt.android.mvvm.ui.example.viewmodel
 
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
@@ -8,11 +8,13 @@ import com.loc.lt.android.mvvm.model.User
 import com.loc.lt.android.mvvm.ui.base.BaseViewModel
 import com.loc.lt.android.mvvm.utils.NetworkHelper
 import com.loc.lt.android.mvvm.utils.Resource
+import com.loc.lt.android.mvvm.utils.security.SecurityUtils
 import kotlinx.coroutines.launch
 
 class ExampleViewModel @ViewModelInject constructor(
     private val repository: DemoRepositoryImp,
-    private val networkHelper: NetworkHelper
+    private val networkHelper: NetworkHelper,
+    private val secure: SecurityUtils
 ) : BaseViewModel() {
     private val _users = MutableLiveData<Resource<List<User>>>()
     val users: LiveData<Resource<List<User>>> get() = _users

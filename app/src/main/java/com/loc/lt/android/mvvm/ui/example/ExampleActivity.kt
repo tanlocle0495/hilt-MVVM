@@ -8,7 +8,7 @@ import androidx.lifecycle.Observer
 import com.loc.lt.android.mvvm.R
 import com.loc.lt.android.mvvm.databinding.ActivityExampleBinding
 import com.loc.lt.android.mvvm.ui.base.BaseActivity
-import com.loc.lt.android.mvvm.ui.demo.viewmodel.ExampleViewModel
+import com.loc.lt.android.mvvm.ui.example.viewmodel.ExampleViewModel
 import com.loc.lt.android.mvvm.ui.example.adapter.ExampleAdapter
 import com.loc.lt.android.mvvm.utils.Status
 import com.loc.lt.android.mvvm.utils.extension.gone
